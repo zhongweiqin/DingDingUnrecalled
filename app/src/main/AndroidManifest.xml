@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.veryyoung.dingding.unrecallled">
+
+    <application android:label="防止钉钉撤回">
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="在本机上保留对方要撤回的钉钉消息。" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="30" />
+    </application>
+</manifest>
