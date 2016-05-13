@@ -9,6 +9,12 @@ android {
             keyAlias "veryyoung"
             keyPassword "password"
         }
+        release {
+            storeFile file("keystore/release.keystore")
+            storePassword "password"
+            keyAlias "veryyoung"
+            keyPassword "password"
+        }
     }
 
     compileSdkVersion 23
@@ -23,7 +29,7 @@ android {
 
     buildTypes {
         release {
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
             minifyEnabled false
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
